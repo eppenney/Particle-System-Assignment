@@ -1,0 +1,14 @@
+<emitter name = "fire" num_particles="400"
+    duration="-1.0" type = "continuous"
+    random_birthrate = "false" 
+    birthrate = "40" additive_blending = "false">
+
+    <spawn_property name="velocity" type="random" min="-5, -0.0, -5" max="5, 0.0, 5"/>
+    <spawn_property name="color" type="constant" value="0.6, 0.6, 0.6, 0.1"/>
+    <spawn_property name="size" type="random" min="20" max="40"/>
+    <spawn_property name="lifetime" type="constant" value="10"/>
+    <spawn_property name="position" type = "box" min = "-50, 0, -50" max = "50, 0, 50"/>
+
+    <affector type="fade" mode="over_life" start="0" end="0.2" function_type="parabolic"/>
+    <affector type="velocity"/>
+</emitter>

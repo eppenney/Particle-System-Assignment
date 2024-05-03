@@ -1,0 +1,4 @@
+<effect name = "campfire">
+    <emitter name = "smoke" offset="0, 10, 0"/>
+    <emitter name = "fire" offset="0, 0, 0"/>
+</effect>
